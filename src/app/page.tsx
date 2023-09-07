@@ -6,6 +6,7 @@ import * as FileInput from "@/components/FileInput";
 import { Select } from "@/components/Select";
 import { SelectItem } from "@/components/Select/SelectItem";
 import Textarea from "@/components/Textarea";
+import { Button } from "@/components/Button";
 
 export default function Home() {
   return (
@@ -24,19 +25,12 @@ export default function Home() {
           </div>
 
           <div className="flex items-center gap-2">
-            <button
-              type="button"
-              className="h-9 rounded-lg border border-zinc-500 px-4 py-2 text-sm font-semibold text-zinc-700 shadow-sm transition-all hover:bg-zinc-100"
-            >
+            <Button variant="outline" type="button">
               Cancel
-            </button>
-            <button
-              type="submit"
-              form="settings"
-              className="h-9 rounded-lg bg-violet-600 px-4 py-2 text-sm font-semibold text-white shadow-sm transition-all hover:bg-violet-800"
-            >
+            </Button>
+            <Button variant="primary" type="submit" form="settings">
               Save
-            </button>
+            </Button>
           </div>
         </div>
 
@@ -216,19 +210,12 @@ export default function Home() {
           </div>
 
           <div className="flex items-end justify-end gap-2 pt-5">
-            <button
-              type="button"
-              className="h-9 rounded-lg border border-zinc-500 px-4 py-2 text-sm font-semibold text-zinc-700 shadow-sm transition-all hover:bg-zinc-100"
-            >
+            <Button variant="outline" type="button">
               Cancel
-            </button>
-            <button
-              type="submit"
-              form="settings"
-              className="h-9 rounded-lg bg-violet-600 px-4 py-2 text-sm font-semibold text-white shadow-sm transition-all hover:bg-violet-800"
-            >
+            </Button>
+            <Button variant="primary" type="submit" form="settings">
               Save
-            </button>
+            </Button>
           </div>
         </form>
       </div>
